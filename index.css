@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+}
+
+body#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 218, 182);
+    color: rgb(88, 39, 7);
+}
+
+#form-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+form {
+    /* box-shadow: 10px 10px 10px black; */
+    padding: 20px 30px;
+    width: 300px;
+    box-shadow: -10px 10px 10px 5px rgb(56, 56, 56);
+    transform: translate(0, 5%);
+}
+
+    form input {
+        border: 1px solid  rgba(88, 39, 7, 0.432);
+        padding: 10px;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgb(247, 234, 210);
+    }
+
+    form input:hover {
+        border-color:rgb(88, 39, 7);
+    }
+
+    form input:focus {
+        outline: 3px;
+        background-color: white;
+    }
+
+    form input[type="submit"] {
+        padding: 5px 10px;
+        border: 1px solid rgb(88, 39, 7);
+        width: auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    form input[type="submit"]:hover {
+        cursor: pointer;
+        background-color: rgb(88, 39, 7);
+        border-color: rgb(88, 39, 7);
+        color: rgb(247, 234, 210);
+        box-shadow: 0px 0px 5px 1px rgb(77, 77, 77);
+    }
+
+    form input[type="submit"]:active {
+        cursor: pointer;
+        background-color: rgb(88, 39, 7);
+        border-color: rgb(88, 39, 7);
+        color: rgb(247, 234, 210);
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+.error {
+    border-color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+/****** Styling for CV page ******/
+.cv-group {
+    margin-bottom: 20px;
+}
+
+    .cv-group#cv-head {
+        text-align: center;
+    }
+
+    .cv-group h3 {
+        margin: 0 0 5px 0;
+    }
+
+    .cv-group h3::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid black;
+    }
+
+    .cv-group .with-details p {
+        font-weight: bold;
+        display: inline;
+    }
+
+    .cv-group .with-details p.details{
+        position: absolute;
+        right: 30px;
+    }
+
+    .cv-group p.position {
+        font-weight: bold;
+    }
+
+    .cv-group .cv-sub {
+        margin: 0 0 10px 0;
+    }
+
+    .cv-group ul li {
+        margin: 0 0 0 20px;
+    }
